@@ -28,11 +28,11 @@ export default function Header() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: spacing[4],
+    paddingHorizontal: spacing[5],
     backgroundColor: colors.green,
     flexDirection: "row",
     alignItems: "center",
-    height: 120,
+    height: 100,
     borderBottomWidth: 0.5,
     borderBottomEndRadius: 50,
     borderBottomLeftRadius: 50,
