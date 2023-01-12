@@ -1,18 +1,19 @@
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import React from "react";
+import Header from "../../component/Header";
+import { colors } from "../../theme/color";
 
 export default function Home() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Home</Text>
+      <Header />
     </SafeAreaView>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    }
-})
+  container: {
+    flex: 1,
+    backgroundColor: colors.black,
+  },
+});
