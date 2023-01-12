@@ -16,7 +16,7 @@ const Slider = () => {
         },
       ]}
       autoPlay={true}
-      onItemChanged={(item) => console.log("item", item)}
+      // onItemChanged={(item) => console.log()}
       closeIconColor="#fff"
       caroselImageStyle={{ height: 250, resizeMode: "cover" }}
     />
