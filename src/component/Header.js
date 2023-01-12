@@ -33,9 +33,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     height: 100,
-    borderBottomWidth: 0.5,
-    borderBottomEndRadius: 50,
-    borderBottomLeftRadius: 50,
+    zIndex: 1,
   },
   text: {
     color: colors.black,
