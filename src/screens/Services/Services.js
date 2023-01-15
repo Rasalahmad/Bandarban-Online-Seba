@@ -14,6 +14,20 @@ import news from "../../assets/news.png";
 import blood from "../../assets/blood.png";
 import hospital from "../../assets/hospital.png";
 import fireService from "../../assets/fireService.png";
+import ambulance from "../../assets/ambulance.png";
+import helpLine from "../../assets/helpLine.png";
+import police from "../../assets/police.png";
+import doctor from "../../assets/doctor.png";
+import lawyer from "../../assets/lawyer.png";
+import e_service from "../../assets/e_service.png";
+import bus from "../../assets/bus.png";
+import train from "../../assets/train.png";
+import journalist from "../../assets/journalist.png";
+import biddut from "../../assets/biddut.png";
+import restuarant from "../../assets/restuarant.png";
+import hotel from "../../assets/hotel.png";
+import v_place from "../../assets/v_place.png";
+import contactUs from "../../assets/contactUs.png";
 
 export default function Services() {
   const services = [
@@ -43,85 +57,85 @@ export default function Services() {
     },
     {
       id: 5,
-      image: news,
+      image: ambulance,
       s_name: "এম্বুলেন্স",
       details: {},
     },
     {
       id: 6,
-      image: blood,
+      image: helpLine,
       s_name: "হেল্প লাইন",
       details: {},
     },
     {
       id: 7,
-      image: hospital,
+      image: police,
       s_name: "থানা পুলিশ",
       details: {},
     },
     {
       id: 8,
-      image: fireService,
+      image: doctor,
       s_name: "ডাক্তার",
       details: {},
     },
     {
       id: 9,
-      image: fireService,
+      image: lawyer,
       s_name: "আইনজীবী",
       details: {},
     },
     {
       id: 10,
-      image: fireService,
+      image: e_service,
       s_name: "ই সবা",
       details: {},
     },
     {
       id: 11,
-      image: fireService,
+      image: bus,
       s_name: "বাস টিকিট",
       details: {},
     },
     {
       id: 12,
-      image: fireService,
+      image: train,
       s_name: "রেল সেবা",
       details: {},
     },
     {
       id: 13,
-      image: fireService,
+      image: journalist,
       s_name: "সাংবাদিক",
       details: {},
     },
     {
       id: 14,
-      image: fireService,
+      image: biddut,
       s_name: "পল্লী বিদ্যুৎ",
       details: {},
     },
     {
       id: 15,
-      image: fireService,
+      image: restuarant,
       s_name: "রেস্টুরেন্ট",
       details: {},
     },
     {
       id: 15,
-      image: fireService,
+      image: hotel,
       s_name: "হোটেল",
       details: {},
     },
     {
       id: 15,
-      image: fireService,
+      image: v_place,
       s_name: "দর্শনীয় স্থান",
       details: {},
     },
     {
       id: 15,
-      image: fireService,
+      image: contactUs,
       s_name: "Contact Us",
       details: {},
     },
