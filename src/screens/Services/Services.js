@@ -32,6 +32,7 @@ import p_barta from "../../assets/service/p_barta.png";
 import p_alo from "../../assets/service/p_alo.jpg";
 import b_protidin from "../../assets/service/b_protidin.jpg";
 import d_star from "../../assets/service/d_star.png";
+import j_news from "../../assets/service/j_news.png";
 import { useNavigation } from "@react-navigation/native";
 
 export default function Services() {
@@ -65,8 +66,8 @@ export default function Services() {
         },
         {
           id: 5,
-          thumbnail: p_alo,
-          url: "https://www.prothomalo.com/",
+          thumbnail: j_news,
+          url: "https://www.jagonews24.com/bangladesh/chittagong/bandarban",
         },
       ],
     },
