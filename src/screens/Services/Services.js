@@ -10,32 +10,65 @@ import {
 import React from "react";
 import { colors } from "../../theme/color";
 import { spacing } from "../../theme/spacing";
-import news from "../../assets/news.png";
-import blood from "../../assets/blood.png";
-import hospital from "../../assets/hospital.png";
-import fireService from "../../assets/fireService.png";
-import ambulance from "../../assets/ambulance.png";
-import helpLine from "../../assets/helpLine.png";
-import police from "../../assets/police.png";
-import doctor from "../../assets/doctor.png";
-import lawyer from "../../assets/lawyer.png";
-import e_service from "../../assets/e_service.png";
-import bus from "../../assets/bus.png";
-import train from "../../assets/train.png";
-import journalist from "../../assets/journalist.png";
-import biddut from "../../assets/biddut.png";
-import restuarant from "../../assets/restuarant.png";
-import hotel from "../../assets/hotel.png";
-import v_place from "../../assets/v_place.png";
-import contactUs from "../../assets/contactUs.png";
+import news from "../../assets/icons/news.png";
+import blood from "../../assets/icons/blood.png";
+import hospital from "../../assets/icons/hospital.png";
+import fireService from "../../assets/icons/fireService.png";
+import ambulance from "../../assets/icons/ambulance.png";
+import helpLine from "../../assets/icons/helpLine.png";
+import police from "../../assets/icons/police.png";
+import doctor from "../../assets/icons/doctor.png";
+import lawyer from "../../assets/icons/lawyer.png";
+import e_service from "../../assets/icons/e_service.png";
+import bus from "../../assets/icons/bus.png";
+import train from "../../assets/icons/train.png";
+import journalist from "../../assets/icons/journalist.png";
+import biddut from "../../assets/icons/biddut.png";
+import restuarant from "../../assets/icons/restuarant.png";
+import hotel from "../../assets/icons/hotel.png";
+import v_place from "../../assets/icons/v_place.png";
+import contactUs from "../../assets/icons/contactUs.png";
+import p_barta from "../../assets/service/p_barta.png";
+import p_alo from "../../assets/service/p_alo.jpg";
+import b_protidin from "../../assets/service/b_protidin.jpg";
+import d_star from "../../assets/service/d_star.png";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Services() {
+  const navigation = useNavigation();
+
   const services = [
     {
       id: 1,
       image: news,
       s_name: "খবর",
-      details: {},
+      details: [
+        {
+          id: 1,
+          thumbnail: p_barta,
+          url: "https://paharbarta.com/",
+        },
+        {
+          id: 2,
+          thumbnail: b_protidin,
+          url: "https://bandarbanpratidin.com/",
+        },
+        {
+          id: 3,
+          thumbnail: p_alo,
+          url: "https://www.prothomalo.com/",
+        },
+        {
+          id: 4,
+          thumbnail: d_star,
+          url: "https://www.thedailystar.net/tags/bandarban",
+        },
+        {
+          id: 5,
+          thumbnail: p_alo,
+          url: "https://www.prothomalo.com/",
+        },
+      ],
     },
     {
       id: 2,
@@ -141,12 +174,16 @@ export default function Services() {
     },
   ];
 
-  const Item = ({ title, img }) => {
+  const Item = ({ item }) => {
     return (
-      <Pressable onPress={() => {}}>
+      <Pressable
+        onPress={() =>
+          navigation.navigate("service", { details: item.details })
+        }
+      >
         <View style={styles.box}>
-          <Image source={img} style={styles.image} />
-          <Text style={styles.title}>{title}</Text>
+          <Image source={item?.image} style={styles.image} />
+          <Text style={styles.title}>{item?.s_name}</Text>
         </View>
       </Pressable>
     );
@@ -161,7 +198,7 @@ export default function Services() {
         data={services}
         numColumns={3}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <Item title={item.s_name} img={item.image} />}
+        renderItem={({ item }) => <Item item={item} />}
       />
     </SafeAreaView>
   );
