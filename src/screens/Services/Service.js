@@ -42,6 +42,7 @@ export default function Service({ route }) {
 
 const styles = StyleSheet.create({
   contaienr: {
+    backgroundColor: "white",
     flex: 1,
   },
   thumbnail: {
@@ -49,7 +50,6 @@ const styles = StyleSheet.create({
     height: 150,
     alignSelf: "center",
     resizeMode: "contain",
-    borderWidth: 1,
     marginVertical: 10,
   },
 });
