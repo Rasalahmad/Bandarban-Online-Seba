@@ -3,8 +3,9 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./src/screens/Home/Home";
 import { StatusBar } from "react-native";
-import Service from "./src/screens/Services/Service";
 import { colors } from "./src/theme/color";
+import News from "./src/screens/Services/News";
+import Blood from "./src/screens/Services/Blood";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,10 +21,20 @@ function App() {
             component={Home}
           />
           <Stack.Screen
-            name="service"
-            component={Service}
+            name="News"
+            component={News}
             options={{
               title: "বান্দরবান জেলার প্রতিদিনের খবর",
+              headerStyle: {
+                backgroundColor: colors.green,
+              },
+            }}
+          />
+          <Stack.Screen
+            name="Blood"
+            component={Blood}
+            options={{
+              title: "জরুরি রক্তের জন্য কল করুন",
               headerStyle: {
                 backgroundColor: colors.green,
               },

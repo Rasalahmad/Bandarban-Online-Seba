@@ -10,9 +10,7 @@ import {
 } from "react-native";
 import React from "react";
 
-export default function Service({ route }) {
-  const data = route.params.details;
-
+export default function News({ route }) {
   const Item = ({ item }) => {
     return (
       <Pressable
