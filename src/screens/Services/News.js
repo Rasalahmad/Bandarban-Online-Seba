@@ -11,6 +11,7 @@ import {
 import React from "react";
 
 export default function News({ route }) {
+  const data = route.params.details;
   const Item = ({ item }) => {
     return (
       <Pressable
