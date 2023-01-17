@@ -112,7 +112,50 @@ export default function Services() {
       image: hospital,
       s_name: "হাসপাতাল",
       title: "HOSPITAL",
-      details: {},
+      details: [
+        {
+          id: 1,
+          name: "বান্দরবান সদর হাসপাতাল",
+          location: "বান্দরবান সদর",
+          phone: "01730-324765",
+        },
+        {
+          id: 2,
+          name: "বান্দরবান ডাইবেটিক হাসপাতাল",
+          location: "বান্দরবান সদর",
+          phone: "0361-63288",
+        },
+        {
+          id: 3,
+          name: "বান্দরবান প্যাথলজি সেন্টার",
+          location: "Bandarban Government High School, Caowl Bazar Rd,",
+          phone: "01786-257776",
+        },
+        {
+          id: 4,
+          name: "Islami shikka kendro health complex",
+          location: "বান্দরবান সদর",
+          phone: "01XXXXXXXX",
+        },
+        {
+          id: 5,
+          name: "সূর্য়ের হাসি ক্লিনিক",
+          location: "বালাঘাটা, বান্দরবন পার্বত্য জেলা",
+          phone: "0361-63288",
+        },
+        {
+          id: 6,
+          name: "বান্দরবান ডেন্টাল কেয়ার",
+          location: "সরকারি উচ্চ বিদ্যালয়ের বিপরীতে",
+          phone: "01777-699669",
+        },
+        {
+          id: 7,
+          name: "সাইক্লোন সেন্টার",
+          location: "হাফেজ ঘোনা, ৮ নং ওয়ার্ড",
+          phone: "01777-699669",
+        },
+      ],
     },
     {
       id: 4,
@@ -230,8 +273,8 @@ export default function Services() {
               return navigation.navigate("News", { details: item.details });
             case "BLOOD":
               return navigation.navigate("Blood", { details: item.details });
-            case "EVENTS":
-              return navigation.navigate("Events", { token: localData });
+            case "HOSPITAL":
+              return navigation.navigate("Hospital", { details: item.details });
             case "GALLERY":
               return navigation.navigate("Gallery", { token: localData });
             case "NOTICE":
