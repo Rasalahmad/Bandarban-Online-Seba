@@ -7,6 +7,8 @@ import { colors } from "./src/theme/color";
 import News from "./src/screens/Services/News";
 import Blood from "./src/screens/Services/Blood";
 import CommonService from "./src/screens/Services/CommonService";
+import Category from "./src/screens/Services/Category";
+import Doctors from "./src/screens/Services/Doctors";
 
 const Stack = createNativeStackNavigator();
 
@@ -50,6 +52,26 @@ function App() {
                 backgroundColor: colors.green,
               },
             })}
+          />
+          <Stack.Screen
+            name="Category"
+            component={Category}
+            options={{
+              title: "বিশেষজ্ঞ ডাক্তারদের তালিকা",
+              headerStyle: {
+                backgroundColor: colors.green,
+              },
+            }}
+          />
+          <Stack.Screen
+            name="Doctors"
+            component={Doctors}
+            options={{
+              title: "বিশেষজ্ঞ ডাক্তারদের তালিকা",
+              headerStyle: {
+                backgroundColor: colors.green,
+              },
+            }}
           />
         </Stack.Navigator>
       </NavigationContainer>
