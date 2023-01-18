@@ -44,6 +44,7 @@ export default function Services() {
       image: news,
       s_name: "খবর",
       title: "NEWS",
+      heading: "",
       details: [
         {
           id: 1,
@@ -77,6 +78,7 @@ export default function Services() {
       image: blood,
       s_name: "ব্লাড ডোনার",
       title: "BLOOD",
+      heading: "",
       details: [
         {
           id: 1,
@@ -111,7 +113,8 @@ export default function Services() {
       id: 3,
       image: hospital,
       s_name: "হাসপাতাল",
-      title: "HOSPITAL",
+      title: "COMMONSERVICE",
+      heading: "বান্দরবানের হাসপাতাল সমূহ",
       details: [
         {
           id: 1,
@@ -161,29 +164,126 @@ export default function Services() {
       id: 4,
       image: fireService,
       s_name: "ফায়ার সার্ভিস",
-      title: "FIRESERVICE",
-      details: {},
+      title: "COMMONSERVICE",
+      heading: "বান্দরবানের ফায়ার সার্ভিস",
+      details: [
+        {
+          id: 1,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 2,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 3,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 4,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 5,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+      ],
     },
     {
       id: 5,
       image: ambulance,
       s_name: "এম্বুলেন্স",
-      title: "AMBULANCE",
-      details: {},
+      title: "COMMONSERVICE",
+      heading: "বান্দরবানের এম্বুলেন্স সার্ভিস",
+      details: [
+        {
+          id: 1,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 2,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 3,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 4,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 5,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+      ],
     },
     {
       id: 6,
       image: helpLine,
       s_name: "হেল্প লাইন",
       title: "HELPLINE",
+      heading: "বান্দরবানের এম্বুলেন্স সার্ভিস",
       details: {},
     },
     {
       id: 7,
       image: police,
       s_name: "থানা পুলিশ",
-      title: "POLICE",
-      details: {},
+      heading: "বান্দরবানের পুলিশ",
+      title: "COMMONSERVICE",
+      details: [
+        {
+          id: 1,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 2,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 3,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 4,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 5,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+      ],
     },
     {
       id: 8,
@@ -231,22 +331,118 @@ export default function Services() {
       id: 14,
       image: biddut,
       s_name: "পল্লী বিদ্যুৎ",
-      title: "BIDDUT",
-      details: {},
+      heading: "বান্দরবানের পল্লী বিদ্যুৎ",
+      title: "COMMONSERVICE",
+      details: [
+        {
+          id: 1,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 2,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 3,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 4,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 5,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+      ],
     },
     {
       id: 15,
       image: restuarant,
       s_name: "রেস্টুরেন্ট",
-      title: "RESTUARANT",
-      details: {},
+      heading: "বান্দরবানের রেস্টুরেন্ট",
+      title: "COMMONSERVICE",
+      details: [
+        {
+          id: 1,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 2,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 3,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 4,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 5,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+      ],
     },
     {
       id: 15,
       image: hotel,
       s_name: "হোটেল",
-      title: "HOTEL",
-      details: {},
+      heading: "বান্দরবানের হোটেল",
+      title: "COMMONSERVICE",
+      details: [
+        {
+          id: 1,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 2,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 3,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 4,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 5,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+      ],
     },
     {
       id: 15,
@@ -273,22 +469,11 @@ export default function Services() {
               return navigation.navigate("News", { details: item.details });
             case "BLOOD":
               return navigation.navigate("Blood", { details: item.details });
-            case "HOSPITAL":
-              return navigation.navigate("Hospital", { details: item.details });
-            case "GALLERY":
-              return navigation.navigate("Gallery", { token: localData });
-            case "NOTICE":
-              return navigation.navigate("Notice", { token: localData });
-            case "FACULTY":
-              return navigation.navigate("Faculty", { token: localData });
-            case "CONTACT":
-              return navigation.navigate("Contact");
-            case "JOURNAL":
-              return navigation.navigate("Journal");
-            case "DASHBOARD":
-              return localData
-                ? navigation.navigate("Dashboard")
-                : navigation.navigate("Login");
+            case "COMMONSERVICE":
+              return navigation.navigate("CommonService", {
+                details: item.details,
+                heading: item?.heading,
+              });
           }
         }}
       >

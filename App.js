@@ -6,7 +6,7 @@ import { StatusBar } from "react-native";
 import { colors } from "./src/theme/color";
 import News from "./src/screens/Services/News";
 import Blood from "./src/screens/Services/Blood";
-import Hospital from "./src/screens/Services/Hospital";
+import CommonService from "./src/screens/Services/CommonService";
 
 const Stack = createNativeStackNavigator();
 
@@ -42,14 +42,14 @@ function App() {
             }}
           />
           <Stack.Screen
-            name="Hospital"
-            component={Hospital}
-            options={{
-              title: "বান্দরবানের হাসপাতাল সমূহ",
+            name="CommonService"
+            component={CommonService}
+            options={({ route }) => ({
+              title: route.params.heading,
               headerStyle: {
                 backgroundColor: colors.green,
               },
-            }}
+            })}
           />
         </Stack.Navigator>
       </NavigationContainer>

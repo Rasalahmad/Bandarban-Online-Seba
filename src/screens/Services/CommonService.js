@@ -10,10 +10,9 @@ import {
 import React from "react";
 import { spacing } from "../../theme/spacing";
 import { FontAwesome } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
 import { colors } from "../../theme/color";
 
-export default function Hospital({ route }) {
+export default function CommonService({ route }) {
   const data = route.params.details;
   const Item = ({ item }) => {
     return (
@@ -21,7 +20,9 @@ export default function Hospital({ route }) {
         <View style={styles.secondary}>
           <View style={{ flex: 0.9 }}>
             <Text style={styles.itemName}>{item.name}</Text>
-            <Text style={styles.location}>{item.location}</Text>
+            {item.location && (
+              <Text style={styles.location}>{item.location}</Text>
+            )}
             <Text style={styles.number}>{item.phone}</Text>
           </View>
           <FontAwesome
