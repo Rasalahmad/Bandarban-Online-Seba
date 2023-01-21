@@ -27,7 +27,7 @@ export default function Category({ route }) {
         onPress={() => navigation.navigate("Doctors", { item: item })}
       >
         <View style={styles.box}>
-          <Text style={styles.text}>{item.category}</Text>
+          <Text style={styles.text}>{item.name}</Text>
         </View>
       </Pressable>
     );
@@ -41,7 +41,7 @@ export default function Category({ route }) {
         data={data}
         numColumns={3}
         style={styles.list}
-        keyExtractor={(item) => item?.id}
+        keyExtractor={(item) => item?.catId}
         renderItem={({ item }) => <Item item={item} />}
       />
     </SafeAreaView>
@@ -53,18 +53,22 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     flex: 1,
   },
+  main: {
+    height: 80,
+    width: windowWidth / 3.28,
+    backgroundColor: "#d4d4d4",
+    marginHorizontal: 6,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 5,
+  },
   box: {
     display: "flex",
     marginHorizontal: 0,
-    width: windowWidth / 3,
   },
   text: {
     fontSize: 20,
-    textAlign: "center",
-    padding: 10,
-    backgroundColor: "#d4d4d4",
-    margin: 10,
-    borderRadius: 5,
   },
   h_text: {
     fontSize: 20,
