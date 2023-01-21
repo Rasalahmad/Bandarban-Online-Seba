@@ -566,7 +566,7 @@ export default function Services() {
 
   return (
     <SafeAreaView style={styles.contaienr}>
-      <Text style={styles.text}>আমাদের সমূহ...</Text>
+      <Text style={styles.text}>আমাদের সেবা সমূহ...</Text>
       <FlatList
         contentContainerStyle={styles.serviceContainer}
         key={"_"}
