@@ -313,7 +313,32 @@ export default function Services() {
       image: lawyer,
       s_name: "আইনজীবী",
       title: "LAWYER",
-      details: {},
+      details: [
+        {
+          id: 1,
+          name: "Rasel Ahmad",
+          img: "https://scontent.fcgp31-1.fna.fbcdn.net/v/t39.30808-6/319988884_3428902050720939_6023433068605453828_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEBjnVnxQc8_kLKbxT9OrQLNSoklbzHSX81KiSVvMdJf-LHS8Q1wW_1RwrGasuGSpzOeevi6sYubVIPT_TxuO0D&_nc_ohc=3wfI9Wg9-7kAX_3Rg4X&_nc_ht=scontent.fcgp31-1.fna&oh=00_AfAHoufyU9HAPH6jK7mh_9Dw0nN0-8GQ7H8pnjwd_lu7og&oe=63CAE2BB",
+          phone: "01625605340",
+          education: "Bachelor of Laws (LL.B, Hons.)",
+          designation: "Barrister",
+        },
+        {
+          id: 2,
+          name: "Rang Hin",
+          phone: "01531-984667",
+          img: "https://scontent.fcgp31-1.fna.fbcdn.net/v/t39.30808-6/313177927_827705958466981_3640847728582947632_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeElXHKSki72X6UCRDneXZ9dcX0jjn-ayFxxfSOOf5rIXEgG8XeI83kHIqhp9cTeR10-mL-5zYPDnZDU4a5Hr-XE&_nc_ohc=hhPusT-RkmYAX_Dy0Fs&tn=ZE9oQOZZa34KuElu&_nc_ht=scontent.fcgp31-1.fna&oh=00_AfCuthBQ_c0PMugR0I9V9e9-S8NUoGnJsXbabWzyraKpww&oe=63C9C477",
+          education: "Bachelor of Laws (LL.B, Hons.)",
+          designation: "Advocate",
+        },
+        {
+          id: 3,
+          name: "Who is Wahid",
+          phone: "01625605340",
+          img: "https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png",
+          education: "Bachelor of Laws (LL.B, Hons.)",
+          designation: "Civil Law Notary",
+        },
+      ],
     },
     {
       id: 10,
@@ -492,6 +517,8 @@ export default function Services() {
               });
             case "CATEGORY":
               return navigation.navigate("Category", { details: item.details });
+            case "LAWYER":
+              return navigation.navigate("Lawyer", { details: item.details });
           }
         }}
       >
