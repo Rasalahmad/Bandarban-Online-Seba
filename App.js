@@ -66,12 +66,13 @@ function App() {
           <Stack.Screen
             name="Doctors"
             component={Doctors}
-            options={{
-              title: "বিশেষজ্ঞ ডাক্তারদের তালিকা",
+            options={({ route }) => ({
+              title: route.params.heading,
               headerStyle: {
+                headerTitleAlign: "center",
                 backgroundColor: colors.green,
               },
-            }}
+            })}
           />
         </Stack.Navigator>
       </NavigationContainer>

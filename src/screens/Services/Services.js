@@ -294,14 +294,17 @@ export default function Services() {
         {
           catId: 1,
           name: "মেডিসিন",
+          title: "মেডিসিন বিশেষজ্ঞ",
         },
         {
           catId: 2,
           name: "গাইনী",
+          title: "গাইনী বিশেষজ্ঞ",
         },
         {
           catId: 3,
           name: "হার্ট রোগ বিশেষজ্ঞ",
+          title: "হার্ট রোগ বিশেষজ্ঞ",
         },
       ],
     },

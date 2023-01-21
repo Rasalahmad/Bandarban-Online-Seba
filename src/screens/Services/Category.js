@@ -21,10 +21,13 @@ export default function Category({ route }) {
   const navigation = useNavigation();
   const data = route.params.details;
   const Item = ({ item }) => {
+    console.log("item", item);
     return (
       <Pressable
         style={styles.main}
-        onPress={() => navigation.navigate("Doctors", { item: item })}
+        onPress={() =>
+          navigation.navigate("Doctors", { item: item, heading: item?.title })
+        }
       >
         <View style={styles.box}>
           <Text style={styles.text}>{item.name}</Text>
