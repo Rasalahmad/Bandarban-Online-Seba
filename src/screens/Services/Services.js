@@ -351,8 +351,40 @@ export default function Services() {
       id: 11,
       image: bus,
       s_name: "বাস টিকিট",
-      title: "BUS",
-      details: {},
+      heading: "বাস টিকিট",
+      title: "COMMONSERVICE",
+      details: [
+        {
+          id: 1,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 2,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 3,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 4,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+        {
+          id: 5,
+          name: "Rang Hin",
+          location: "",
+          phone: "01654525654",
+        },
+      ],
     },
     {
       id: 12,
