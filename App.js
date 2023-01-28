@@ -10,6 +10,7 @@ import CommonService from "./src/screens/Services/CommonService";
 import Category from "./src/screens/Services/Category";
 import Doctors from "./src/screens/Services/Doctors";
 import Lawyer from "./src/screens/Services/Lawyer";
+import Journalist from "./src/screens/Services/Journalist";
 
 const Stack = createNativeStackNavigator();
 
@@ -80,6 +81,16 @@ function App() {
             component={Lawyer}
             options={{
               title: "বান্দরবান জেলার আইনজীবী",
+              headerStyle: {
+                backgroundColor: colors.green,
+              },
+            }}
+          />
+          <Stack.Screen
+            name="Journalist"
+            component={Journalist}
+            options={{
+              title: "বান্দরবান জেলার সাংবাদিক",
               headerStyle: {
                 backgroundColor: colors.green,
               },
