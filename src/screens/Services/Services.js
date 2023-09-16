@@ -100,7 +100,7 @@ export default function Services() {
         },
         {
           id: 3,
-          name: "Who is Wahid",
+          name: "Ayon Barua",
           phone: "01625605340",
           bg: "O+",
           img: "https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png",
@@ -332,7 +332,7 @@ export default function Services() {
         },
         {
           id: 3,
-          name: "Who is Wahid",
+          name: "Ayon Barua",
           phone: "01625605340",
           img: "https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png",
           education: "Bachelor of Laws (LL.B, Hons.)",
@@ -417,7 +417,7 @@ export default function Services() {
         },
         {
           id: 3,
-          name: "Who is Wahid",
+          name: "Ayon Barua",
           phone: "01625605340",
           img: "https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png",
           paper: "Paharbartha",
